@@ -1,0 +1,33 @@
+.app {
+  padding: 20px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    &__textArea {
+      margin-top: 20px;
+      width: 600px;
+      height: 300px;
+      border-radius: 5px;
+    };
+
+    &__replyButton {
+      margin-top: 20px;
+      border-radius: 4px;
+      width: 200px;
+      height: 30px;
+      color: white;
+      background: #228ae5;
+      border: none;
+      font-size: 16px;
+      opacity: 0.7;
+      transition: opacity 0.5s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 1;
+      }
+    };
+  };
+};

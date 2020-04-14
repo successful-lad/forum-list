@@ -1,0 +1,52 @@
+.forumUser {
+  margin-bottom: 20px;
+
+  &__mainComment {
+    height: 100px;
+    display: flex;
+
+    &__logo {
+      width: 40px;
+      height: 40px;
+      background: gray;
+      margin-right: 20px;
+      margin-top: 10px;
+    }
+
+    &__userAnswer {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      &__header {
+        display: flex;
+        align-items: center;
+      }
+
+      &__name {
+        margin-right: 20px;
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      &__replyButton {
+        border: none;
+        width: 60px;
+        color: gray;
+        opacity: 0.7;
+        transition: opacity 0.5s ease-in-out;
+        cursor: pointer;
+        background: none;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__answerComment {
+    margin-left: 100px;
+  }
+}
